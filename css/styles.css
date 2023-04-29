@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #fff;
+    font-family: sans-serif;
+    color: #000;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background: url("../assets/nav-background.jpeg");
+    background-size: cover;
+    color: #000;
+    z-index: 1;
+}
+
+.wrapper .description {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 3;
+}
+
+.wrapper .description .nav-text {
+    font-size: 1em;
+}
+
+.wrapper .description h1 {
+    font-size: 5em;
+    color: #fff;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.wrapper .description .reservation {
+    padding: 10px 20px;
+    background: inherit;
+    margin: 8px 0;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: .5px;
+    border: 2px solid #fff;
+    width: 150px;
+}
+
+.wrapper .description .reservation:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 0 80px;
+    z-index: 5;
+}
+
+nav h1 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+/* Chef Section */
+.chef-section {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px;
+    justify-content: center;
+    margin: 20px auto;
+    background: #fff;
+}
+
+.chef-section .description {
+    width: 500px;
+    opacity: .8;
+    padding: 20px 20px;
+    margin-left: 50px;
+}
+
+.chef-section .description p {
+    font-size: .9em;
+    line-height: 1.2;
+    padding: 5px 0;
+    font-weight: normal;
+    color: #ccc;
+}
+
+.chef-section .description h5 {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    color: #ccc;
+}
+
+.chef-section .description h1 {
+    font-size: 3.8em;
+    font-style: inherit;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+
+.chef-section .description .chef-btn {
+    padding: 10px 20px;
+    background: inherit;
+    width: 250px;
+    color: #ccc;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+}
+
+.chef-section .description .chef-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+}
+
+.chef-section img {
+    width: 90%;
+    margin: 0 100px;
+}
+
+/* Menu Section */
+.menu-section {
+    height: 100vh;
+    background: #ECF2FF;
+    padding: 100px 50px;
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+}
+
+.menu-section h5 {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    color: #ccc;
+}
+
+.menu-section h1 {
+    font-size: 3.5em;
+    font-style: inherit;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.menu-section p {
+    padding-top: 10px;
+    line-height: 1;
+    font-size: 1em;
+    color: #ccc;
+    font-weight: 400;
+}
+
+.menu-section .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.boxes .box {
+    width: 300px;
+    margin-top: 20px;
+    box-shadow: 2px 6px 12px rgba(0,0,0,0.3);
+    border: 1px solid #ccc;
+}
+
+.boxes .box .description {
+    padding: 0 1rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.boxes .box .description .price {
+    color: #FF8400;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.boxes .box .description h2 {
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: .7px;
+    padding-top: 4px;
+}
+
+.boxes .box .description button {
+    padding: 8px 10px;
+    background: #FF8400;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    font-size: .5em;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.boxes .box .description button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+}
+
+.boxes .box img {
+    width: 100%;
+}
+
+/* Delicious Menu Section */
+.delicious-menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.delicious-menu h2 {
+    font-size: 3.5em;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+.delicious-menu p {
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.delicious-menu .buttons {
+    display: flex;
+    color: #ccc;
+}
+
+.delicious-menu .buttons button {
+    padding: 6px 20px;
+    margin: 8px 5px;
+    color: #fff;
+    background: #ccc;
+}
+
+.delicious-menu .buttons button:nth-child(1) {
+    color: #000;
+}
+
+.delicious-menu .main-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.delicious-menu .main-content img {
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.main-content .content {
+    display: flex;
+    gap: 30px;
+}
+
+.main-content .content .description {
+    width: 25rem;
+    margin: 0 auto;
+}
+
+.main-content .content .description h3 {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.main-content .content .description p {
+    font-size: .6em;
+    padding-bottom: 10px;
+}
+
+.main-content .content .description .price {
+    color: #FF8400;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+/* New Section */
+.new-setion {
+    height: 100vh;
+    background: #ECF2FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-setion .boxes {
+    display: flex;
+}
+
+.boxes .box {
+    margin: 10px 10px;
+    border: 2px solid #ccc;
+}
+
+.new-setion h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.new-setion p {
+    font-size: 1em;
+    padding: 3px;
+    color: #ccc;
+    line-height: 1.2;
+}
+
+.boxes .box h1 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.boxes .box img {
+    width: 100%;
+    height: 50%;
+}
+
+/* Gallery Section */
+.gallery-section {
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.gallery-section h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.gallery-section p {
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.2;
+    padding: 3px;
+}
+
+.gallery-section .images-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    gap: 1rem;
+}
+
+.gallery-section .images-gallery img {
+    width: 30%;
+    height: 250px;
+    border: 5px solid #ccc;
+}
+
+/* Get In Touch Section */
+.get-in-touch-section {
+    height: 100vh;
+    background: #ECF2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.get-in-touch-section h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.get-in-touch-section p {
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.2;
+    padding: 3px;
+}
+
+.content-wrapper input, button, textarea {
+    display: block;
+    margin-top: 30px;
+    padding: 8px;
+    width: 100%;
+    border: 0;
+    background: #ccc;
+    color: #fff;
+}
+
+.content-wrapper .left-content textarea {
+    height: 170px;
+    text-align: start;
+}
+
+.content-wrapper .left-content button {
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+    border: 2px solid #fff;
+}
+
+.get-in-touch-section .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.content-wrapper .left-content {
+    width: 500px;
+}
+
+.content-wrapper .right-content p {
+    padding: 10px 0;
+}
+
+.get-in-touch-section .content-wrapper .right-content img {
+    width: 350px;
+    margin-top: 20px;
+}
+
+/* Map Section */
+.section-map {
+    height: 70vh;
+    width: 100%;
+}
+
+.section-map .map {
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer Section */
+.footer-section {
+    background: #2A2F4F;
+    color: #ccc;
+    padding: 50px 0;
+}
+
+footer .footer-text {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 70px;
+    font-size: 1em;
+}
+
+.footer-section footer .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-content h3 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-content p {
+    font-size: 1em;
+    margin: 15px 0;
+}
+
+.footer-content .about-us .about-des {
+    width: 400px;
+}
